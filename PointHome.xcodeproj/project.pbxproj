@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C1F80B235911BDCDA33C3A8 /* libPods-PointHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8500591CBCB1BC24CC4889C4 /* libPods-PointHome.a */; };
 		E32A51BA21EA0BA4001BC7F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51B921EA0BA4001BC7F8 /* AppDelegate.swift */; };
-		E32A51BC21EA0BA4001BC7F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51BB21EA0BA4001BC7F8 /* ViewController.swift */; };
-		E32A51BF21EA0BA4001BC7F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32A51BD21EA0BA4001BC7F8 /* Main.storyboard */; };
+		E32A51BF21EA0BA4001BC7F8 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32A51BD21EA0BA4001BC7F8 /* MapView.storyboard */; };
 		E32A51C121EA0BA6001BC7F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32A51C021EA0BA6001BC7F8 /* Assets.xcassets */; };
 		E32A51C421EA0BA6001BC7F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32A51C221EA0BA6001BC7F8 /* LaunchScreen.storyboard */; };
 		E32A51CF21EA0BA6001BC7F8 /* PointHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51CE21EA0BA6001BC7F8 /* PointHomeTests.swift */; };
 		E32A51DA21EA0BA6001BC7F8 /* PointHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51D921EA0BA6001BC7F8 /* PointHomeUITests.swift */; };
+		E32A51EB21EA3E09001BC7F8 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51EA21EA3E09001BC7F8 /* MapRouter.swift */; };
+		E32A51ED21EA3E16001BC7F8 /* MapAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51EC21EA3E16001BC7F8 /* MapAssembler.swift */; };
+		E32A51EF21EA3E21001BC7F8 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51EE21EA3E21001BC7F8 /* MapInteractor.swift */; };
+		E32A51F121EA3E28001BC7F8 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51F021EA3E28001BC7F8 /* MapPresenter.swift */; };
+		E32A51F321EA3E33001BC7F8 /* MapEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51F221EA3E33001BC7F8 /* MapEntity.swift */; };
+		E32A51F521EA3E4C001BC7F8 /* MapContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51F421EA3E4C001BC7F8 /* MapContract.swift */; };
+		E32A51F821EA4162001BC7F8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51F721EA4162001BC7F8 /* MapView.swift */; };
+		E32A51FB21EA4717001BC7F8 /* LoadFromStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51FA21EA4717001BC7F8 /* LoadFromStoryboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D2BD555AF790FD513D1FC1A /* Pods-PointHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PointHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-PointHome/Pods-PointHome.release.xcconfig"; sourceTree = "<group>"; };
+		8500591CBCB1BC24CC4889C4 /* libPods-PointHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PointHome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE902A8F0DE31DACE9DFDEB2 /* Pods-PointHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PointHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PointHome/Pods-PointHome.debug.xcconfig"; sourceTree = "<group>"; };
 		E32A51B621EA0BA4001BC7F8 /* PointHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PointHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32A51B921EA0BA4001BC7F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E32A51BB21EA0BA4001BC7F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E32A51BE21EA0BA4001BC7F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E32A51BE21EA0BA4001BC7F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MapView.storyboard; sourceTree = "<group>"; };
 		E32A51C021EA0BA6001BC7F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32A51C321EA0BA6001BC7F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E32A51C521EA0BA6001BC7F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +57,14 @@
 		E32A51D521EA0BA6001BC7F8 /* PointHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PointHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32A51D921EA0BA6001BC7F8 /* PointHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointHomeUITests.swift; sourceTree = "<group>"; };
 		E32A51DB21EA0BA6001BC7F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E32A51EA21EA3E09001BC7F8 /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		E32A51EC21EA3E16001BC7F8 /* MapAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAssembler.swift; sourceTree = "<group>"; };
+		E32A51EE21EA3E21001BC7F8 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		E32A51F021EA3E28001BC7F8 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		E32A51F221EA3E33001BC7F8 /* MapEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapEntity.swift; sourceTree = "<group>"; };
+		E32A51F421EA3E4C001BC7F8 /* MapContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContract.swift; sourceTree = "<group>"; };
+		E32A51F721EA4162001BC7F8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E32A51FA21EA4717001BC7F8 /* LoadFromStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFromStoryboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1F80B235911BDCDA33C3A8 /* libPods-PointHome.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08B4678730B2EE2B1016726D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8500591CBCB1BC24CC4889C4 /* libPods-PointHome.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3592662FEA833FCE664AF965 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE902A8F0DE31DACE9DFDEB2 /* Pods-PointHome.debug.xcconfig */,
+				3D2BD555AF790FD513D1FC1A /* Pods-PointHome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E32A51AD21EA0BA4001BC7F8 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +117,8 @@
 				E32A51CD21EA0BA6001BC7F8 /* PointHomeTests */,
 				E32A51D821EA0BA6001BC7F8 /* PointHomeUITests */,
 				E32A51B721EA0BA4001BC7F8 /* Products */,
+				3592662FEA833FCE664AF965 /* Pods */,
+				08B4678730B2EE2B1016726D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,10 +136,10 @@
 			isa = PBXGroup;
 			children = (
 				E32A51B921EA0BA4001BC7F8 /* AppDelegate.swift */,
-				E32A51BB21EA0BA4001BC7F8 /* ViewController.swift */,
-				E32A51BD21EA0BA4001BC7F8 /* Main.storyboard */,
-				E32A51C021EA0BA6001BC7F8 /* Assets.xcassets */,
 				E32A51C221EA0BA6001BC7F8 /* LaunchScreen.storyboard */,
+				E32A51E921EA1F95001BC7F8 /* Resources */,
+				E32A51F921EA4706001BC7F8 /* FunctionalityExtensions */,
+				E32A51E821EA1F7F001BC7F8 /* MapView */,
 				E32A51C521EA0BA6001BC7F8 /* Info.plist */,
 			);
 			path = PointHome;
@@ -125,6 +163,45 @@
 			path = PointHomeUITests;
 			sourceTree = "<group>";
 		};
+		E32A51E821EA1F7F001BC7F8 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				E32A51F621EA4151001BC7F8 /* MapView */,
+				E32A51EA21EA3E09001BC7F8 /* MapRouter.swift */,
+				E32A51EC21EA3E16001BC7F8 /* MapAssembler.swift */,
+				E32A51EE21EA3E21001BC7F8 /* MapInteractor.swift */,
+				E32A51F021EA3E28001BC7F8 /* MapPresenter.swift */,
+				E32A51F221EA3E33001BC7F8 /* MapEntity.swift */,
+				E32A51F421EA3E4C001BC7F8 /* MapContract.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		E32A51E921EA1F95001BC7F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E32A51C021EA0BA6001BC7F8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E32A51F621EA4151001BC7F8 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				E32A51BD21EA0BA4001BC7F8 /* MapView.storyboard */,
+				E32A51F721EA4162001BC7F8 /* MapView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		E32A51F921EA4706001BC7F8 /* FunctionalityExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				E32A51FA21EA4717001BC7F8 /* LoadFromStoryboard.swift */,
+			);
+			path = FunctionalityExtensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E32A51DE21EA0BA6001BC7F8 /* Build configuration list for PBXNativeTarget "PointHome" */;
 			buildPhases = (
+				CA53146BF238A6C7B880A001 /* [CP] Check Pods Manifest.lock */,
 				E32A51B221EA0BA4001BC7F8 /* Sources */,
 				E32A51B321EA0BA4001BC7F8 /* Frameworks */,
 				E32A51B421EA0BA4001BC7F8 /* Resources */,
+				E1E8B286DD9B180C91F920E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,7 +310,7 @@
 			files = (
 				E32A51C421EA0BA6001BC7F8 /* LaunchScreen.storyboard in Resources */,
 				E32A51C121EA0BA6001BC7F8 /* Assets.xcassets in Resources */,
-				E32A51BF21EA0BA4001BC7F8 /* Main.storyboard in Resources */,
+				E32A51BF21EA0BA4001BC7F8 /* MapView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +330,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CA53146BF238A6C7B880A001 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PointHome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1E8B286DD9B180C91F920E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PointHome/Pods-PointHome-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PointHome/Pods-PointHome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E32A51B221EA0BA4001BC7F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E32A51BC21EA0BA4001BC7F8 /* ViewController.swift in Sources */,
 				E32A51BA21EA0BA4001BC7F8 /* AppDelegate.swift in Sources */,
+				E32A51F521EA3E4C001BC7F8 /* MapContract.swift in Sources */,
+				E32A51F321EA3E33001BC7F8 /* MapEntity.swift in Sources */,
+				E32A51EB21EA3E09001BC7F8 /* MapRouter.swift in Sources */,
+				E32A51F121EA3E28001BC7F8 /* MapPresenter.swift in Sources */,
+				E32A51FB21EA4717001BC7F8 /* LoadFromStoryboard.swift in Sources */,
+				E32A51F821EA4162001BC7F8 /* MapView.swift in Sources */,
+				E32A51ED21EA3E16001BC7F8 /* MapAssembler.swift in Sources */,
+				E32A51EF21EA3E21001BC7F8 /* MapInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,12 +428,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E32A51BD21EA0BA4001BC7F8 /* Main.storyboard */ = {
+		E32A51BD21EA0BA4001BC7F8 /* MapView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E32A51BE21EA0BA4001BC7F8 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MapView.storyboard;
 			sourceTree = "<group>";
 		};
 		E32A51C221EA0BA6001BC7F8 /* LaunchScreen.storyboard */ = {
@@ -430,6 +565,7 @@
 		};
 		E32A51DF21EA0BA6001BC7F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE902A8F0DE31DACE9DFDEB2 /* Pods-PointHome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +584,7 @@
 		};
 		E32A51E021EA0BA6001BC7F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D2BD555AF790FD513D1FC1A /* Pods-PointHome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
