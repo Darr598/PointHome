@@ -11,7 +11,6 @@ import GoogleMaps
 
 class MapView: UIViewController, MapViewProtocol {
 
-    @IBOutlet var mapView: GMSMapView!
     weak var delegate: MapViewDelegate!
 
 }

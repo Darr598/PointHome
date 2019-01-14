@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PointHome/MapView/MapView/MapView.swift"
-            timestampString = "569110756.76002"
+            timestampString = "569194891.314497"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "MapView"
             landmarkType = "3">
             <Locations>

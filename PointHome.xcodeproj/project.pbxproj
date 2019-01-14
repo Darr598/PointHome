@@ -22,6 +22,10 @@
 		E32A51F521EA3E4C001BC7F8 /* MapContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51F421EA3E4C001BC7F8 /* MapContract.swift */; };
 		E32A51F821EA4162001BC7F8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51F721EA4162001BC7F8 /* MapView.swift */; };
 		E32A51FB21EA4717001BC7F8 /* LoadFromStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51FA21EA4717001BC7F8 /* LoadFromStoryboard.swift */; };
+		E3E4376221ED19FB0000419A /* AppContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4376121ED19FB0000419A /* AppContract.swift */; };
+		E3E4376421ED1A0F0000419A /* AppMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4376321ED1A0F0000419A /* AppMainViewController.swift */; };
+		E3E4376621ED1A200000419A /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4376521ED1A200000419A /* AppRouter.swift */; };
+		E3E4376821ED25C70000419A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E4376721ED25C70000419A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		E32A51F421EA3E4C001BC7F8 /* MapContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContract.swift; sourceTree = "<group>"; };
 		E32A51F721EA4162001BC7F8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		E32A51FA21EA4717001BC7F8 /* LoadFromStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFromStoryboard.swift; sourceTree = "<group>"; };
+		E3E4376121ED19FB0000419A /* AppContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContract.swift; sourceTree = "<group>"; };
+		E3E4376321ED1A0F0000419A /* AppMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainViewController.swift; sourceTree = "<group>"; };
+		E3E4376521ED1A200000419A /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		E3E4376721ED25C70000419A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +143,11 @@
 		E32A51B821EA0BA4001BC7F8 /* PointHome */ = {
 			isa = PBXGroup;
 			children = (
+				E3E4376121ED19FB0000419A /* AppContract.swift */,
+				E3E4376321ED1A0F0000419A /* AppMainViewController.swift */,
+				E3E4376521ED1A200000419A /* AppRouter.swift */,
 				E32A51B921EA0BA4001BC7F8 /* AppDelegate.swift */,
+				E3E4376721ED25C70000419A /* Main.storyboard */,
 				E32A51C221EA0BA6001BC7F8 /* LaunchScreen.storyboard */,
 				E32A51E921EA1F95001BC7F8 /* Resources */,
 				E32A51F921EA4706001BC7F8 /* FunctionalityExtensions */,
@@ -311,6 +323,7 @@
 				E32A51C421EA0BA6001BC7F8 /* LaunchScreen.storyboard in Resources */,
 				E32A51C121EA0BA6001BC7F8 /* Assets.xcassets in Resources */,
 				E32A51BF21EA0BA4001BC7F8 /* MapView.storyboard in Resources */,
+				E3E4376821ED25C70000419A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,10 +402,13 @@
 				E32A51F321EA3E33001BC7F8 /* MapEntity.swift in Sources */,
 				E32A51EB21EA3E09001BC7F8 /* MapRouter.swift in Sources */,
 				E32A51F121EA3E28001BC7F8 /* MapPresenter.swift in Sources */,
+				E3E4376221ED19FB0000419A /* AppContract.swift in Sources */,
 				E32A51FB21EA4717001BC7F8 /* LoadFromStoryboard.swift in Sources */,
 				E32A51F821EA4162001BC7F8 /* MapView.swift in Sources */,
+				E3E4376621ED1A200000419A /* AppRouter.swift in Sources */,
 				E32A51ED21EA3E16001BC7F8 /* MapAssembler.swift in Sources */,
 				E32A51EF21EA3E21001BC7F8 /* MapInteractor.swift in Sources */,
+				E3E4376421ED1A0F0000419A /* AppMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,7 +594,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = KingDarragh.PointHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -597,7 +613,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = KingDarragh.PointHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
