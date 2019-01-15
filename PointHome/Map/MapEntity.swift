@@ -6,11 +6,8 @@
 //  Copyright © 2019 Darragh King. All rights reserved.
 //
 
-struct pointGeoLocation {
-    var latitude: Double
-    var longitude: Double
-}
+import GooglePlaces
 
 class MapEntity: MapEntityProtocol {
-    var pointLocation: pointGeoLocation?
+    var home: GMSPlace?
 }

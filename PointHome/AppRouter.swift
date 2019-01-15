@@ -20,13 +20,15 @@ class AppRouter: AppMainUserInterfaceDelegate {
         self.appMainViewController.delegate = self
     }
     
-    func UserInterfaceDidLoad() {
-        setupApp()
-    }
-    
     private func setupApp() {
         mapRouter = MapRouter()
         let mapView = mapRouter.assembleModule()
         appMainViewController.presentViewController(mapView)
+    }
+}
+
+extension AppRouter {
+    func UserInterfaceDidLoad() {
+        setupApp()
     }
 }

@@ -22,6 +22,14 @@
 		E32A51F521EA3E4C001BC7F8 /* MapContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51F421EA3E4C001BC7F8 /* MapContract.swift */; };
 		E32A51F821EA4162001BC7F8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51F721EA4162001BC7F8 /* MapView.swift */; };
 		E32A51FB21EA4717001BC7F8 /* LoadFromStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A51FA21EA4717001BC7F8 /* LoadFromStoryboard.swift */; };
+		E34D771021EE7A54002069B3 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34D770F21EE7A54002069B3 /* HomeRouter.swift */; };
+		E34D771221EE7A5E002069B3 /* HomeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34D771121EE7A5E002069B3 /* HomeAssembler.swift */; };
+		E34D771421EE7A69002069B3 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34D771321EE7A69002069B3 /* HomeInteractor.swift */; };
+		E34D771621EE7A71002069B3 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34D771521EE7A71002069B3 /* HomePresenter.swift */; };
+		E34D771821EE7A7B002069B3 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34D771721EE7A7B002069B3 /* HomeEntity.swift */; };
+		E34D771A21EE7A83002069B3 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34D771921EE7A83002069B3 /* HomeContract.swift */; };
+		E34D771D21EE7A9E002069B3 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34D771C21EE7A9E002069B3 /* HomeView.storyboard */; };
+		E34D771F21EE7AB0002069B3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34D771E21EE7AB0002069B3 /* HomeView.swift */; };
 		E3E4376221ED19FB0000419A /* AppContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4376121ED19FB0000419A /* AppContract.swift */; };
 		E3E4376421ED1A0F0000419A /* AppMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4376321ED1A0F0000419A /* AppMainViewController.swift */; };
 		E3E4376621ED1A200000419A /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4376521ED1A200000419A /* AppRouter.swift */; };
@@ -69,6 +77,14 @@
 		E32A51F421EA3E4C001BC7F8 /* MapContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContract.swift; sourceTree = "<group>"; };
 		E32A51F721EA4162001BC7F8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		E32A51FA21EA4717001BC7F8 /* LoadFromStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFromStoryboard.swift; sourceTree = "<group>"; };
+		E34D770F21EE7A54002069B3 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		E34D771121EE7A5E002069B3 /* HomeAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembler.swift; sourceTree = "<group>"; };
+		E34D771321EE7A69002069B3 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		E34D771521EE7A71002069B3 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		E34D771721EE7A7B002069B3 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		E34D771921EE7A83002069B3 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		E34D771C21EE7A9E002069B3 /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
+		E34D771E21EE7AB0002069B3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E3E4376121ED19FB0000419A /* AppContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContract.swift; sourceTree = "<group>"; };
 		E3E4376321ED1A0F0000419A /* AppMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainViewController.swift; sourceTree = "<group>"; };
 		E3E4376521ED1A200000419A /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
@@ -151,7 +167,8 @@
 				E32A51C221EA0BA6001BC7F8 /* LaunchScreen.storyboard */,
 				E32A51E921EA1F95001BC7F8 /* Resources */,
 				E32A51F921EA4706001BC7F8 /* FunctionalityExtensions */,
-				E32A51E821EA1F7F001BC7F8 /* MapView */,
+				E32A51E821EA1F7F001BC7F8 /* Map */,
+				E34D770E21EE7A37002069B3 /* Home */,
 				E32A51C521EA0BA6001BC7F8 /* Info.plist */,
 			);
 			path = PointHome;
@@ -175,7 +192,7 @@
 			path = PointHomeUITests;
 			sourceTree = "<group>";
 		};
-		E32A51E821EA1F7F001BC7F8 /* MapView */ = {
+		E32A51E821EA1F7F001BC7F8 /* Map */ = {
 			isa = PBXGroup;
 			children = (
 				E32A51F621EA4151001BC7F8 /* MapView */,
@@ -186,7 +203,7 @@
 				E32A51F221EA3E33001BC7F8 /* MapEntity.swift */,
 				E32A51F421EA3E4C001BC7F8 /* MapContract.swift */,
 			);
-			path = MapView;
+			path = Map;
 			sourceTree = "<group>";
 		};
 		E32A51E921EA1F95001BC7F8 /* Resources */ = {
@@ -212,6 +229,29 @@
 				E32A51FA21EA4717001BC7F8 /* LoadFromStoryboard.swift */,
 			);
 			path = FunctionalityExtensions;
+			sourceTree = "<group>";
+		};
+		E34D770E21EE7A37002069B3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E34D771B21EE7A88002069B3 /* HomeAR */,
+				E34D770F21EE7A54002069B3 /* HomeRouter.swift */,
+				E34D771121EE7A5E002069B3 /* HomeAssembler.swift */,
+				E34D771321EE7A69002069B3 /* HomeInteractor.swift */,
+				E34D771521EE7A71002069B3 /* HomePresenter.swift */,
+				E34D771721EE7A7B002069B3 /* HomeEntity.swift */,
+				E34D771921EE7A83002069B3 /* HomeContract.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E34D771B21EE7A88002069B3 /* HomeAR */ = {
+			isa = PBXGroup;
+			children = (
+				E34D771C21EE7A9E002069B3 /* HomeView.storyboard */,
+				E34D771E21EE7AB0002069B3 /* HomeView.swift */,
+			);
+			path = HomeAR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E32A51C421EA0BA6001BC7F8 /* LaunchScreen.storyboard in Resources */,
+				E34D771D21EE7A9E002069B3 /* HomeView.storyboard in Resources */,
 				E32A51C121EA0BA6001BC7F8 /* Assets.xcassets in Resources */,
 				E32A51BF21EA0BA4001BC7F8 /* MapView.storyboard in Resources */,
 				E3E4376821ED25C70000419A /* Main.storyboard in Resources */,
@@ -375,14 +416,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PointHome/Pods-PointHome-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,18 +440,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E34D771A21EE7A83002069B3 /* HomeContract.swift in Sources */,
+				E34D771821EE7A7B002069B3 /* HomeEntity.swift in Sources */,
 				E32A51BA21EA0BA4001BC7F8 /* AppDelegate.swift in Sources */,
 				E32A51F521EA3E4C001BC7F8 /* MapContract.swift in Sources */,
 				E32A51F321EA3E33001BC7F8 /* MapEntity.swift in Sources */,
+				E34D771421EE7A69002069B3 /* HomeInteractor.swift in Sources */,
 				E32A51EB21EA3E09001BC7F8 /* MapRouter.swift in Sources */,
 				E32A51F121EA3E28001BC7F8 /* MapPresenter.swift in Sources */,
 				E3E4376221ED19FB0000419A /* AppContract.swift in Sources */,
+				E34D771021EE7A54002069B3 /* HomeRouter.swift in Sources */,
 				E32A51FB21EA4717001BC7F8 /* LoadFromStoryboard.swift in Sources */,
 				E32A51F821EA4162001BC7F8 /* MapView.swift in Sources */,
 				E3E4376621ED1A200000419A /* AppRouter.swift in Sources */,
 				E32A51ED21EA3E16001BC7F8 /* MapAssembler.swift in Sources */,
+				E34D771221EE7A5E002069B3 /* HomeAssembler.swift in Sources */,
 				E32A51EF21EA3E21001BC7F8 /* MapInteractor.swift in Sources */,
 				E3E4376421ED1A0F0000419A /* AppMainViewController.swift in Sources */,
+				E34D771621EE7A71002069B3 /* HomePresenter.swift in Sources */,
+				E34D771F21EE7AB0002069B3 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
