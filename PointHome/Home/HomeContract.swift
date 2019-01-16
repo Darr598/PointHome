@@ -8,12 +8,13 @@
 
 import Foundation
 import UIKit.UIViewController
-import ARKit
+import ARCL
+import GooglePlaces
 
 protocol HomeRouterProtocol: HomeInteractorDelegate {
     var interactor: HomeInteractorProtocol! {get set}
     
-    func assembleModule() -> UIViewController
+    func assembleModule(with homeLocation: GMSPlace) -> UIViewController
 }
 
 protocol HomeInteractorDelegate: class {
@@ -34,7 +35,8 @@ protocol HomePresenterProtocol: HomeViewDelegate {
     var delegate: HomePresenterDelegate! {get set}
     var view: HomeViewProtocol! {get set}
     
-    func startARSession(with config: ARWorldTrackingConfiguration)
+    func pointHome(home: GMSPlace)
+
 }
 
 protocol HomeViewDelegate: class {
@@ -44,9 +46,10 @@ protocol HomeViewDelegate: class {
 protocol HomeViewProtocol: class {
     var delegate: HomeViewDelegate! {get set}
     
-    func startARSession(with config: ARWorldTrackingConfiguration)
+    func AddARView(ARView: SceneLocationView)
+
 }
 
 protocol HomeEntityProtocol: class {
-    var ARConfig: ARWorldTrackingConfiguration! {get set}
+    var home: GMSPlace! {get set}
 }

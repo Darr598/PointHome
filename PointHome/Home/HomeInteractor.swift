@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ARKit
 
 class HomeInteractor: HomeInteractorProtocol {
     
@@ -15,7 +14,9 @@ class HomeInteractor: HomeInteractorProtocol {
     var entity: HomeEntityProtocol!
     var presenter: HomePresenterProtocol!
 
+}
+extension HomeInteractor {
     func didLoadARView() {
-        presenter.startARSession(with: entity.ARConfig)
+        presenter.pointHome(home: entity.home)
     }
 }

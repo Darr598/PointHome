@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreMotion
 
 class AppMainViewController: UIViewController, AppMainUserInterfaceProtocol {
     

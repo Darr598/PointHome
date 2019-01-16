@@ -6,7 +6,6 @@
 //  Copyright © 2019 Darragh King. All rights reserved.
 //
 import UIKit.UIViewController
-import GoogleMaps
 import GooglePlaces
 
 //TODO Unowned 

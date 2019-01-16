@@ -3,4 +3,5 @@ target 'PointHome' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
+  pod 'ARCL'
 end

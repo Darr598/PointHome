@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import ARKit
+import GooglePlaces
 
 class HomeEntity: HomeEntityProtocol {
-    var ARConfig: ARWorldTrackingConfiguration!
+    var home: GMSPlace!
 }

@@ -14,6 +14,13 @@ class MapInteractor: MapInteractorProtocol {
     weak var delegate: MapInteractorDelegate!
     var entity: MapEntityProtocol!
     var presenter: MapPresenterProtocol!
+
+    func presentARView(_ ARView: UIViewController) {
+        presenter.presentARView(ARView)
+    }
+    
+}
+extension MapInteractor {
     
     func didTapFindHome() {
         presenter.beginSearching()
@@ -23,10 +30,6 @@ class MapInteractor: MapInteractorProtocol {
         entity.home = location
         presenter.finsihSearching()
         delegate.didSelectLocation()
-    }
-    
-    func presentARView(_ ARView: UIViewController) {
-        presenter.presentARView(ARView)
     }
     
 }

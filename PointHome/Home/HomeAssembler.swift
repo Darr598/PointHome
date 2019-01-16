@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit.UIViewController
-import ARKit
 
 struct HomeAssembler {
 
@@ -35,8 +34,7 @@ struct HomeAssembler {
         interactor.entity = entity
         interactor.presenter = presenter
         presenter.view = view
-        
-        entity.ARConfig = ARWorldTrackingConfiguration()
+    
     }
     
 }

@@ -17,23 +17,9 @@
                     <view key="view" contentMode="scaleToFill" id="88u-Gr-88r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZO-u8-Y2J">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </arscnView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="eZO-u8-Y2J" firstAttribute="leading" secondItem="d4b-Y2-pWx" secondAttribute="leading" id="Aab-by-feU"/>
-                            <constraint firstItem="eZO-u8-Y2J" firstAttribute="top" secondItem="d4b-Y2-pWx" secondAttribute="top" id="SLy-Ec-ptJ"/>
-                            <constraint firstItem="d4b-Y2-pWx" firstAttribute="bottom" secondItem="eZO-u8-Y2J" secondAttribute="bottom" id="jUK-PO-t3R"/>
-                            <constraint firstItem="d4b-Y2-pWx" firstAttribute="trailing" secondItem="eZO-u8-Y2J" secondAttribute="trailing" id="ydr-Fg-ld5"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="d4b-Y2-pWx"/>
                     </view>
-                    <connections>
-                        <outlet property="ARSCNView" destination="eZO-u8-Y2J" id="0f0-rn-tlH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxh-Ff-sJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

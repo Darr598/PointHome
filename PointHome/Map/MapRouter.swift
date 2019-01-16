@@ -25,14 +25,18 @@ class MapRouter: MapRouterProtocol {
         return view as! UIViewController
     }
     
-    func didSelectLocation() {
-        startAR()
-    }
-    
     func startAR() {
+        
+        assert(interactor.entity.home != nil, "Should not try to point home without first selecting a location")
+        
         homeRouter = HomeRouter()
-        let homeView = self.homeRouter!.assembleModule()
+        let homeView = self.homeRouter!.assembleModule(with: interactor.entity.home!)
         interactor.presentARView(homeView)
     }
     
+}
+extension MapRouter {
+    func didSelectLocation() {
+        startAR()
+    }
 }

@@ -16,15 +16,7 @@ class MapPresenter: MapPresenterProtocol {
     
     weak var delegate: MapPresenterDelegate!
     var view: MapViewProtocol!
-    
-    func didTapFindHome() {
-        delegate.didTapFindHome()
-    }
-    
-    func didSelectLocation(location: GMSPlace) {
-        delegate.didSelectLocation(location: location)
-    }
-    
+
     func beginSearching() {
         let autocompleteController = GMSAutocompleteViewController()
         autocompleteController.delegate = view
@@ -40,4 +32,15 @@ class MapPresenter: MapPresenterProtocol {
         view.presentViewController(ARView)
     }
 
+}
+extension MapPresenter {
+    
+    func didTapFindHome() {
+        delegate.didTapFindHome()
+    }
+    
+    func didSelectLocation(location: GMSPlace) {
+        delegate.didSelectLocation(location: location)
+    }
+    
 }
