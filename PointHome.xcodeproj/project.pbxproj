@@ -30,6 +30,7 @@
 		E34D771A21EE7A83002069B3 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34D771921EE7A83002069B3 /* HomeContract.swift */; };
 		E34D771D21EE7A9E002069B3 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34D771C21EE7A9E002069B3 /* HomeView.storyboard */; };
 		E34D771F21EE7AB0002069B3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34D771E21EE7AB0002069B3 /* HomeView.swift */; };
+		E389325421F1339600868C3B /* UIView+FadeAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E389325321F1339600868C3B /* UIView+FadeAnimations.swift */; };
 		E3E4376221ED19FB0000419A /* AppContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4376121ED19FB0000419A /* AppContract.swift */; };
 		E3E4376421ED1A0F0000419A /* AppMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4376321ED1A0F0000419A /* AppMainViewController.swift */; };
 		E3E4376621ED1A200000419A /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4376521ED1A200000419A /* AppRouter.swift */; };
@@ -85,6 +86,7 @@
 		E34D771921EE7A83002069B3 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
 		E34D771C21EE7A9E002069B3 /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
 		E34D771E21EE7AB0002069B3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E389325321F1339600868C3B /* UIView+FadeAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FadeAnimations.swift"; sourceTree = "<group>"; };
 		E3E4376121ED19FB0000419A /* AppContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContract.swift; sourceTree = "<group>"; };
 		E3E4376321ED1A0F0000419A /* AppMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainViewController.swift; sourceTree = "<group>"; };
 		E3E4376521ED1A200000419A /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				E32A51FA21EA4717001BC7F8 /* LoadFromStoryboard.swift */,
+				E389325321F1339600868C3B /* UIView+FadeAnimations.swift */,
 			);
 			path = FunctionalityExtensions;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E34D771A21EE7A83002069B3 /* HomeContract.swift in Sources */,
+				E389325421F1339600868C3B /* UIView+FadeAnimations.swift in Sources */,
 				E34D771821EE7A7B002069B3 /* HomeEntity.swift in Sources */,
 				E32A51BA21EA0BA4001BC7F8 /* AppDelegate.swift in Sources */,
 				E32A51F521EA3E4C001BC7F8 /* MapContract.swift in Sources */,
