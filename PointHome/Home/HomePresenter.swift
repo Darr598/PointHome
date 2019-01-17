@@ -20,7 +20,7 @@ class HomePresenter: HomePresenterProtocol {
     func pointHome(home: GMSPlace) {
         
         let location = CLLocation(coordinate: home.coordinate, altitude: defaultAltitude)
-        let image = UIImage.init(cgImage: UIApplicationShortcutIcon.IconType.home as! CGImage)
+        let image = UIImage(named: "home")!
         
         let annotationNode = LocationAnnotationNode(location: location, image: image)
         let ARView = SceneLocationView()

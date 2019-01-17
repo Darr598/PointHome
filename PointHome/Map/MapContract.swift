@@ -6,6 +6,7 @@
 //  Copyright © 2019 Darragh King. All rights reserved.
 //
 import UIKit.UIViewController
+import GoogleMaps
 import GooglePlaces
 
 //TODO Unowned 
@@ -18,7 +19,7 @@ protocol MapRouterProtocol: MapInteractorDelegate {
 }
 
 protocol MapInteractorDelegate: class {
-    func didSelectLocation()
+    func didTapShowHomeInAR()
 }
 
 protocol MapInteractorProtocol: MapPresenterDelegate {
@@ -32,6 +33,8 @@ protocol MapInteractorProtocol: MapPresenterDelegate {
 protocol MapPresenterDelegate: class {
     func didTapFindHome()
     func didSelectLocation(location: GMSPlace)
+    func didTapShowHomeInAR()
+    func didLongPressMapView()
 }
 
 protocol MapPresenterProtocol: MapViewDelegate {
@@ -39,13 +42,19 @@ protocol MapPresenterProtocol: MapViewDelegate {
     var view: MapViewProtocol! {get set}
     
     func beginSearching()
-    func finsihSearching()
+    func finishSearching()
+    func pinSelectedLocationOnMap(location: GMSPlace)
     func presentARView(_ ARView: UIViewController)
+    func panMapToLocation(_ location: CLLocationCoordinate2D)
+    func activateARButton()
+    func showNudgeView()
 }
 
 protocol MapViewDelegate: class {
     func didTapFindHome()
     func didSelectLocation(location: GMSPlace)
+    func didTapShowHomeInAR()
+    func didLongPressMapView()
 }
 
 protocol MapViewProtocol: GMSAutocompleteViewControllerDelegate {
@@ -53,6 +62,10 @@ protocol MapViewProtocol: GMSAutocompleteViewControllerDelegate {
     
     func presentViewController(_ viewController: UIViewController )
     func dismissCurrentViewController()
+    func placeMarkerOnMap(marker: GMSMarker)
+    func panMapToLocation(_ location: CLLocationCoordinate2D, zoomLevel: Float)
+    func activateARButton()
+    func showNudgeView()
 }
 
 protocol MapEntityProtocol: class {

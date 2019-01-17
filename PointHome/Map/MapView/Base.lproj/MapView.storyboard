@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Map View-->
+        <!--Delegate-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="MapView" id="BYZ-38-t0r" customClass="MapView" customModule="PointHome" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,18 +19,69 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNT-t6-9e6" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xQJ-uB-xk9"/>
+                                </connections>
                             </view>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="UER-pS-x7j">
+                                <rect key="frame" x="150" y="105" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="ECY-2x-Zcj"/>
+                                    <constraint firstAttribute="height" constant="75" id="dPB-Rg-KGf"/>
+                                </constraints>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfB-J2-naJ">
+                                <rect key="frame" x="20" y="607" width="335" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kTz-OH-OvC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Show direction to home in AR"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="findHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lI6-4J-xYs"/>
+                                    <action selector="showHomeInAR:" destination="BYZ-38-t0r" eventType="touchUpInside" id="76A-AH-xin"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbj-Nb-UZ5">
-                                <rect key="frame" x="0.0" y="567" width="375" height="50"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <rect key="frame" x="20" y="30" width="335" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="etp-7j-O5X"/>
                                 </constraints>
-                                <state key="normal" title="Where is home for you ? ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Where is home for you ? "/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="findHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Qu-8g-rC0"/>
                                 </connections>
@@ -38,22 +89,32 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="UER-pS-x7j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1KE-hx-Gm6"/>
                             <constraint firstItem="kNT-t6-9e6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Ir-lf-3pz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wbj-Nb-UZ5" secondAttribute="trailing" id="2wc-zE-UdE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kNT-t6-9e6" secondAttribute="bottom" id="6yf-UJ-SeH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wbj-Nb-UZ5" secondAttribute="trailing" constant="20" id="2wc-zE-UdE"/>
+                            <constraint firstItem="kNT-t6-9e6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4gJ-TL-yA4"/>
+                            <constraint firstItem="UER-pS-x7j" firstAttribute="top" secondItem="wbj-Nb-UZ5" secondAttribute="bottom" constant="25" id="9zs-za-Zus"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kNT-t6-9e6" secondAttribute="trailing" id="Arr-cN-zSu"/>
-                            <constraint firstItem="kNT-t6-9e6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ldl-iH-hEW"/>
-                            <constraint firstItem="wbj-Nb-UZ5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mfA-xc-Ey0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wbj-Nb-UZ5" secondAttribute="bottom" constant="50" id="pIY-w7-8H5"/>
+                            <constraint firstAttribute="bottom" secondItem="kNT-t6-9e6" secondAttribute="bottom" id="BIf-pc-UBm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gfB-J2-naJ" secondAttribute="trailing" constant="20" id="IYp-YR-IDL"/>
+                            <constraint firstItem="gfB-J2-naJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="J4V-Yn-cOf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gfB-J2-naJ" secondAttribute="bottom" constant="10" id="Lpx-Ga-bbd"/>
+                            <constraint firstItem="wbj-Nb-UZ5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Tpt-aK-ZGO"/>
+                            <constraint firstItem="wbj-Nb-UZ5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mfA-xc-Ey0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="arrowView" destination="UER-pS-x7j" id="0Ee-gw-1jd"/>
                         <outlet property="mapView" destination="kNT-t6-9e6" id="bac-Cg-vcK"/>
+                        <outlet property="openARViewButton" destination="wbj-Nb-UZ5" id="UrE-NI-NF3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Arrow" width="100" height="100"/>
+    </resources>
 </document>

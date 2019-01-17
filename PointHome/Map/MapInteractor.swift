@@ -28,8 +28,19 @@ extension MapInteractor {
     
     func didSelectLocation(location: GMSPlace) {
         entity.home = location
-        presenter.finsihSearching()
-        delegate.didSelectLocation()
+    
+        presenter.finishSearching()
+        presenter.pinSelectedLocationOnMap(location: location)
+        presenter.panMapToLocation(location.coordinate)
+        presenter.activateARButton()
+    }
+    
+    func didTapShowHomeInAR() {
+        delegate.didTapShowHomeInAR()
+    }
+    
+    func didLongPressMapView() {
+        presenter.showNudgeView()
     }
     
 }

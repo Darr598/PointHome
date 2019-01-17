@@ -36,7 +36,7 @@ class MapRouter: MapRouterProtocol {
     
 }
 extension MapRouter {
-    func didSelectLocation() {
+    func didTapShowHomeInAR() {
         startAR()
     }
 }
