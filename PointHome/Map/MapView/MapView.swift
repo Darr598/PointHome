@@ -51,7 +51,11 @@ class MapView: UIViewController, MapViewProtocol {
     }
     
     func showNudgeView() {
-        arrowView.fadeOut()
+        arrowView.isHidden = false
+        arrowView.fadeOut(2.0, delay: 0.0) { [weak self] (true) in
+            self?.arrowView.isHidden = true
+            self?.arrowView.alpha = 1.0
+        }
     }
 
 }
