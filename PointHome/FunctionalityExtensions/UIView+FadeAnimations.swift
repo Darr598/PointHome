@@ -1,11 +1,3 @@
-//
-//  UIView+FadeAnimations.swift
-//  PointHome
-//
-//  Created by Darragh King on 17/01/2019.
-//  Copyright © 2019 Darragh King. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
